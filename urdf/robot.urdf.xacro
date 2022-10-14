@@ -1,7 +1,6 @@
-<?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
-
-    <!-- Example link -->
-    <link name="base_link"></link>
-
+<?xml version="1.0" ?>
+<robot name="turtlebot4" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- Base create3 model -->
+    <xacro:include filename="$(find simulation)/urdf/irobot_create_description/urdf/create3.urdf.xacro" />
+    <xacro:include filename="$(find simulation)/urdf/depthai_descr.urdf.xacro" />
 </robot>

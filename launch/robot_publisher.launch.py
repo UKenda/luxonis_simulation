@@ -14,10 +14,10 @@ def generate_launch_description():
 
     # Check if we're told to use sim time
     use_sim_time = LaunchConfiguration('use_sim_time')
-
+ 
     # Process the URDF file
     pkg_path = os.path.join(get_package_share_directory('simulation'))
-    xacro_file = os.path.join(pkg_path,'urdf','depthai_descr.urdf.xacro')
+    xacro_file = os.path.join(pkg_path,'urdf','robot.urdf.xacro')
     robot_description_config = xacro.process_file(xacro_file)
     
     # Create a robot_state_publisher node
