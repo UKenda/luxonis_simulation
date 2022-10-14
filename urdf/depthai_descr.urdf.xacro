@@ -4,12 +4,12 @@
     <xacro:arg name="camera_name"   default="oak" />
     <xacro:arg name="camera_model"  default="OAK-D" />
     <xacro:arg name="base_frame"    default="oak-d_frame" />
-    <xacro:arg name="parent_frame"  default="button_power" />
-    <xacro:arg name="cam_pos_x"     default="0.0" />
+    <xacro:arg name="parent_frame"  default="base_link" />
+    <xacro:arg name="cam_pos_x"     default="0.2" />
     <xacro:arg name="cam_pos_y"     default="0.0" />
-    <xacro:arg name="cam_pos_z"     default="0.0" />
+    <xacro:arg name="cam_pos_z"     default="0.2" />
     <xacro:arg name="cam_roll"      default="0.0" />
-    <xacro:arg name="cam_pitch"     default="1.57" />
+    <xacro:arg name="cam_pitch"     default="0.0" />
     <xacro:arg name="cam_yaw"       default="0.0" />
 
 
