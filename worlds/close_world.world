@@ -496,7 +496,7 @@
       <model name='OfficeChairGrey'>
         <pose>-2.66231 0.868437 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='body'>
+        <link name='body9'>
           <pose>-2.66231 0.868437 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -506,7 +506,7 @@
       <model name='Table'>
         <pose>7.68416 -7.72678 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='link16'>
           <pose>7.68416 -7.72678 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -516,7 +516,7 @@
       <model name='Table_clone'>
         <pose>7.56316 -5.984 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='link17'>
           <pose>7.56316 -5.984 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -526,7 +526,7 @@
       <model name='Table_clone_0'>
         <pose>-1.38667 -6.85459 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='link18'>
           <pose>-1.38667 -6.85459 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -536,7 +536,7 @@
       <model name='TrashBin'>
         <pose>6.40009 -9.56001 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='body'>
+        <link name='body10'>
           <pose>6.40009 -9.56001 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -546,7 +546,7 @@
       <model name='TrolleyBox2'>
         <pose>0.649391 -2.47393 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='body'>
+        <link name='body11'>
           <pose>0.649391 -2.47393 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -566,7 +566,7 @@
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='link19'>
           <pose>0 0 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
