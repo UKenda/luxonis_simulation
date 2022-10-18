@@ -1,9 +1,31 @@
 <?xml version="1.0" ?>
 <robot name="my_bot" xmlns:xacro="http://ros.org/wiki/xacro">
-  <!-- Base create3 model -->
-    <!--<xacro:include filename="$(find simulation)/urdf/dummy_robot/robot_core.xacro" />
-    <xacro:include filename="$(find simulation)/urdf/dummy_robot/gazebo_control.xacro" />-->
-    <xacro:include filename="$(find simulation)/urdf/irobot_create_description/urdf/create3.urdf.xacro" />-->
-    <xacro:include filename="$(find simulation)/urdf/dummy_robot/gazebo_control.xacro" />
-    <xacro:include filename="$(find simulation)/urdf/depthai_descr.urdf.xacro" />
+
+  <xacro:include filename="$(find simulation)/urdf/irobot_create_description/urdf/create3.urdf.xacro" />-->
+  <xacro:include filename="$(find simulation)/urdf/gazebo_control.xacro" />
+  <xacro:include filename="$(find simulation)/urdf/turtlebot4_description/urdf/sensors/rplidar.urdf.xacro" />
+  <xacro:include filename="$(find simulation)/urdf/turtlebot4_description/urdf/sensors/camera_bracket.urdf.xacro" />
+  <xacro:include filename="$(find simulation)/urdf/oak-D/depthai_descr.urdf.xacro" />
+
+  <!-- Mechanical properties -->
+  <xacro:property name="rplidar_x_offset"              value="${0.393584*cm2m}"/>
+  <xacro:property name="rplidar_y_offset"              value="${0*cm2m}"/>
+  <xacro:property name="rplidar_z_offset"              value="${7.529272*cm2m}"/>
+
+  <xacro:property name="camera_mount_x_offset"         value="${-11*cm2m}"/>
+  <xacro:property name="camera_mount_y_offset"         value="${0*cm2m}"/>
+  <xacro:property name="camera_mount_z_offset"         value="${2.914772*cm2m}"/>
+
+
+  <!-- Turtlebot4 sensor definitions -->
+
+  <xacro:rplidar name="rplidar" parent_link="base_link" gazebo="$(arg gazebo)">
+    <origin xyz="${rplidar_x_offset} ${rplidar_y_offset} ${rplidar_z_offset + base_link_z_offset}"
+            rpy="0 0 ${pi/2}"/>
+  </xacro:rplidar>
+  
+  <xacro:camera_bracket name="oakd_lite_camera_bracket" parent_link="base_link">
+    <origin xyz="${camera_mount_x_offset} ${camera_mount_y_offset} ${camera_mount_z_offset + base_link_z_offset}"/>
+  </xacro:camera_bracket>
+
 </robot>
