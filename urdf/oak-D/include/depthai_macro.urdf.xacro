@@ -90,8 +90,10 @@
         <child link="${camera_name}_rgb_camera_optical_frame"/>
     </joint>
 
-    <gazebo reference="${camera_name}_rgb_camera_frame">
-        <material>Gazebo/Red</material>
+
+
+     <gazebo reference="${camera_name}_rgb_camera_frame">
+
 
         <sensor name="camera" type="depth">
             <pose> 0 0 0 0 0 0 </pose>
